@@ -41,11 +41,12 @@ def profile(request, username):
     page_obj = paginator.get_page(page_number)
     posts_count = post_list.count()
     # print(Follow.objects.filter(user=request.user).filter(author=propose_author))
-    if Follow.objects.filter(user=request.user).filter(
-            author=propose_author).exists():
-        following = True
-    else:
-        following = False
+    # if Follow.objects.filter(user=request.user).filter(
+    #         author=propose_author).exists():
+    #     following = True
+    # else:
+    #     following = False
+    following = is_subscribed(request.user, propose_author)
     context = {
         'page_obj': page_obj,
         'username': username,

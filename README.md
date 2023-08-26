@@ -1,3 +1,25 @@
-# hw05_final
+# Социальная сеть Yatube
 
-[![CI](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml)
+### Краткое описание
+
+Yatube это платформа для создания блогов, поиска друзей и обмена мнениями.
+
+### Технологии 
+
+Python 3.7 
+
+Django 2.2.16
+
+### Функционал проекта: 
+- регистрация пользователей с возможностью восстановления пароля
+- подписка на авторов
+- добавление комментариев
+- поиск
+- кеширование
+- пагинация
+
+### Запуск проекта в dev-режиме 
+- Установите и активируйте виртуальное окружение 
+- Установите зависимости из файла requirements.txt 
+- ``` pip install -r requirements.txt ``` 
+-  В папке с файлом manage.py выполните команду: ``` python3 manage.py runserver ``` 
